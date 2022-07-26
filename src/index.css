@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;800&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,700;9..144,800;9..144,900&display=swap');
+
 body{
   margin: 0px;
 }
@@ -6,11 +8,12 @@ body{
   box-sizing: border-box;
 }
 
-.main-container{
+.home-page-container{
   width: 100vw;
   height: 100vh;
   background-image: url("../public/images/desktop/image-header.jpg");
   background-size: cover;
+  background-position: center;
   padding-top: 30px;
 }
 
@@ -42,7 +45,8 @@ body{
 }
 
 .navbar-item{
-  font-family: 'sans-serif';
+  font-family: 'Barlow';
+  font-weight: 600;
   font-size: 20px;
   color: #ffffff;
   margin-right: 50px;
@@ -53,20 +57,24 @@ body{
 .contact-button{
   width: 150px;
   height: 60px;
+  font-family: 'Fraunces';
+  text-transform: uppercase;
+  font-weight: 600;
   border-radius: 30px;
   margin-top: auto;
   margin-bottom: auto;
   border: none;
-  font-size: 20px;
+  font-size: 18px;
   color: #ffffff;
   background-color: rgb(130, 220, 243);
 }
 
 .home-page-title{
+  font-family: "Fraunces";
+  font-weight: 900;
   font-size: 60px;
   color: #ffffff;
   letter-spacing: 10px;
-  font-weight: bold;
   text-align: center;
   margin-top: 80px;
 }
@@ -75,4 +83,72 @@ body{
   margin-left: 49%;
   height: 150px;
   margin-top: 80px;
+}
+
+
+
+
+
+
+.about-page-container{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+.about-page-text-container{
+  width: 49vw;
+  padding: 40px 160px 40px 160px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.about-page-heading{
+  font-family: "Fraunces";
+  color: hsl(212, 27%, 19%);
+  font-size: 50px;
+  font-weight: 900;
+  word-break: break-word;
+}
+
+.about-page-para{
+  font-family: "Barlow";
+  color: hsl(232, 10%, 55%);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.learn-more-button{
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: hsl(213, 9%, 39%);
+  text-transform: uppercase;
+}
+
+.about-page-image{
+  width: 50vw;
+}
+
+
+
+
+
+
+
+.services-main-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.services-conatiner{
+  width: 49vw;
+  background-size: cover;
+  height: 600px;
+  border: 1px solid red;
 }
