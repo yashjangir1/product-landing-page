@@ -64,6 +64,7 @@ body{
 }
 
 .navbar-links:hover{
+  font-size: 22px;
   border-bottom: 5px solid #ffffff;
 }
 
@@ -180,6 +181,7 @@ body{
 }
 
 .learn-more-button:hover{
+  font-size: 20px;
   border-bottom: 7px solid yellow;
 }
 
@@ -370,6 +372,7 @@ body{
 }
 
 .footer-links:hover{
+  font-size: 20px;
   color: #ffffff;
 }
 
@@ -393,4 +396,5 @@ body{
 .social-media-icon:hover{
   cursor: pointer;
   color: #ffffff;
+  font-size: 33px;
 }
