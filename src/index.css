@@ -33,6 +33,10 @@ body{
   height: 40px;
 }
 
+.logo:hover{
+  cursor: pointer;
+}
+
 .navbar-contents-container{
   display: flex;
   flex-direction: row;
@@ -45,7 +49,7 @@ body{
 }
 
 .navbar-item{
-  margin-right: 50px;
+  margin-right: 40px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -56,6 +60,11 @@ body{
   font-size: 20px;
   text-decoration: none;
   color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.navbar-links:hover{
+  border-bottom: 5px solid #ffffff;
 }
 
 .contact-button{
@@ -73,6 +82,12 @@ body{
   background-color: rgb(130, 220, 243);
 }
 
+.contact-button:hover{
+  transform: scale(1.1);
+  background-color: rgb(168, 222, 236);
+  cursor: pointer;
+}
+
 .home-page-title{
   font-family: "Fraunces";
   font-weight: 900;
@@ -87,9 +102,32 @@ body{
   margin-left: 49%;
   height: 150px;
   margin-top: 80px;
+  animation: 0.75s arrow-animation ease-in infinite;
 }
 
 
+
+@keyframes arrow-animation{
+  20%{
+    transform: translateY(10%);
+  }
+
+  40%{
+    transform: translateY(20%);
+  }
+
+  60%{
+    transform: translateY(30%);
+  }
+
+  80%{
+    transform: translateY(40%);
+  }
+
+  100%{
+    transform: translateY(50%);
+  }
+}
 
 
 
@@ -104,11 +142,17 @@ body{
 
 .about-page-text-container{
   width: 50vw;
-  padding: 40px 160px 40px 160px;
+  padding: 20px;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 0px;
   margin-right: 0px;
+}
+
+.about-page-text-c-inner{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
 }
 
 .about-page-heading{
@@ -133,6 +177,10 @@ body{
   font-weight: 700;
   color: hsl(213, 9%, 39%);
   text-transform: uppercase;
+}
+
+.learn-more-button:hover{
+  border-bottom: 7px solid yellow;
 }
 
 .about-page-image{
@@ -160,6 +208,7 @@ body{
   text-align: center;
   justify-content: flex-end;
   padding-bottom: 50px;
+  background-position: center;
 }
 
 .services-text-container{
@@ -173,6 +222,7 @@ body{
   font-family: "Fraunces";
   font-size: 40px;
   font-weight: 900;
+  line-height: 2.2rem;
 }
 
 .project-para{
@@ -255,4 +305,92 @@ body{
   font-size: 14px;
   font-weight: 600;
   color: hsl(210, 4%, 67%);
+}
+
+
+
+
+
+.images-container{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.product-image{
+  width: 25vw;
+}
+
+
+
+
+
+
+.footer-container{
+  height: 50vh;
+  width: 100vw;
+  background-color: hsl(167, 58%, 72%);
+  position: relative;
+}
+
+.footer-logo{
+  height: 30px;
+  position: absolute;
+  top:35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-logo{
+  cursor: pointer;
+}
+
+.footer-items-container{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-item{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footer-links{
+  text-decoration: none;
+  font-family: "Barlow";
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(168, 34%, 41%);
+}
+
+.footer-links:hover{
+  color: #ffffff;
+}
+
+.social-media-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social-media-icon{
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 30px;
+  color: hsl(168, 35%, 30%);
+}
+
+.social-media-icon:hover{
+  cursor: pointer;
+  color: #ffffff;
 }

@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import About from './About'
 import Services from './Services'
 import Projects from './Projects'
+import Footer from './Footer'
 import './index.css'
 
 export default function App(){
@@ -47,11 +48,38 @@ export default function App(){
       <div className = 'projects-main-container'>
         <h1 className = 'projects-heading'>Client Testimonials</h1>
         <div class = "all-clients-container">
-            <Projects />
-            <Projects />
-            <Projects />
+            <Projects 
+              image = "/images/image-emily.jpg"
+              name = "Emily R."
+              position = "Marketing Director"
+              para = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ad nulla aliquid ut! Voluptatum, debitis."
+            />
+            <Projects 
+              image = "/images/image-thomas.jpg"
+              name = "Thomas S."
+              position = "Chief Operating Officer"
+              para = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ad nulla aliquid ut! Voluptatum, debitis."
+            />
+            <Projects 
+              image = "/images/image-jennie.jpg"
+              name = "Jennie F."
+              position = "Business Owner"
+              para = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ad nulla aliquid ut! Voluptatum, debitis."
+            />
         </div>
       </div>
+
+
+      <div className = 'images-container'>
+        <img className = 'product-image' src = "/images/desktop/image-gallery-milkbottles.jpg" alt = "product" />
+        <img className = 'product-image' src = "/images/desktop/image-gallery-orange.jpg" alt = "product" />
+        <img className = 'product-image' src = "/images/desktop/image-gallery-cone.jpg" alt = "product" />
+        <img className = 'product-image' src = "/images/desktop/image-gallery-sugarcubes.jpg" alt = "product" />
+      </div>
+
+
+      <Footer />
+      
     </div>
   )
 }

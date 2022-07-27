@@ -1,14 +1,14 @@
 import React from 'react'
 
-export default function Projects() {
+export default function Projects(props) {
     return (
         <div className = 'client-testimonial-container'>
-            <img className = 'client-image' src = "/images/image-emily.jpg" alt = "client" />
-            <p className = "client-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ad nulla aliquid ut! Voluptatum, debitis.</p>
+            <img className = 'client-image' src = {props.image} alt = "client" />
+            <p className = "client-para">{props.para}</p>
            
            <div class = "client-details-container">
-                <h1 className = 'client-name'>Emily R.</h1>
-                <p className = 'client-position'>Marketing Director</p>
+                <h1 className = 'client-name'>{props.name}</h1>
+                <p className = 'client-position'>{props.position}</p>
            </div>
         </div>
     )
