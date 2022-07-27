@@ -37,6 +37,11 @@ body{
   cursor: pointer;
 }
 
+.bars-icon{
+  display: none;
+  color: transparent;
+}
+
 .navbar-contents-container{
   display: flex;
   flex-direction: row;
@@ -79,13 +84,13 @@ body{
   margin-bottom: auto;
   border: none;
   font-size: 18px;
-  color: #ffffff;
-  background-color: rgb(130, 220, 243);
+  color: black;
+  background-color: #ffffff;
 }
 
 .contact-button:hover{
-  transform: scale(1.1);
-  background-color: rgb(168, 222, 236);
+  color: #ffffff;
+  background-color: rgb(130, 220, 243);
   cursor: pointer;
 }
 
@@ -397,4 +402,136 @@ body{
   cursor: pointer;
   color: #ffffff;
   font-size: 33px;
+}
+
+
+
+
+
+
+@media all and (max-width: 768px){
+
+  .home-page-title{
+    font-size: 45px;
+    margin-top: 100px;
+  }
+
+  .home-page-container{
+    padding-top: 10px;
+  }
+
+  
+  .navbar-container{
+    padding: 0px;
+    padding: 0px 20px 0px 20px;
+  }
+   
+  .logo{
+    width: 150px;
+    height: 40px;
+  }
+
+  .bars-icon{
+    display: block;
+    color: #ffffff;
+    font-size: 40px;
+    margin-left: auto;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .contact-button{
+    display: none;
+  }
+
+  .navbar-items-container{
+    display: none;
+  }
+
+  .arrow-down{
+    margin-left: 45%;
+  }
+
+
+
+
+
+  .about-page-container{
+    flex-direction: column;
+  }
+
+  .about-page-text-container{
+    order: 2 !important; 
+    width: 100vw;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .about-page-text-c-inner{
+    margin-top: 90px;
+    min-width: 100%;
+    text-align: center;
+    height: 40vh;
+  }
+
+  .about-page-image{
+    width: 100vw;
+  }
+
+
+
+
+  .services-main-container{
+    flex-direction: column;
+  }
+
+  .services-conatiner{
+    width: 100vw;
+  }
+
+
+  
+
+
+  .projects-main-container{
+    height: 100%;
+  }
+
+  .all-clients-container{
+    flex-direction: column;
+  }
+
+  .client-testimonial-container{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 100px;
+  }
+
+
+
+
+
+
+
+  .images-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .product-image{
+    width: 50vw;
+  }
+
+
+
+
+
+  .services-conatiner{
+    padding-bottom: 20px;
+  }
+
+  .services-text-container{
+    width: 90%;
+  }
 }

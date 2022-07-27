@@ -5,6 +5,7 @@ export default function Navbar(){
     return (
         <div className = "navbar-container">
            <img src = '/images/logo.svg' alt = "logo" className = 'logo' />
+           <i class="bars-icon fa-solid fa-bars"></i>
            <div className = 'navbar-contents-container'>
                 <ul className = 'navbar-items-container'>
                     <li className = 'navbar-item'><a className = 'navbar-links' href = "google.com">About</a></li>
