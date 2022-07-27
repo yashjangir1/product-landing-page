@@ -1,10 +1,12 @@
 import React from 'react'
 
-export default function Services() {
+export default function Services(props) {
     return (
-        <div className = 'services-conatiner' style = {{backgroundImage: "url('images/desktop/image-graphic-design.jpg')"}}>
-            <h1 className = 'project-heading'>Graphic design</h1>
-            <p className = 'project-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit sequi molestias itaque. Voluptatem explicabo deleniti quaerat corrupti excepturi voluptate.</p>
+        <div className = 'services-conatiner' style = {{backgroundImage: props.background}}>
+            <div className = 'services-text-container'>
+                <h1 className = 'project-heading' style = {{color : props.color}}>{props.heading}</h1>
+                <p className = 'project-para' style = {{color : props.color}}>{props.para}</p>
+            </div>
         </div>
     )
 }

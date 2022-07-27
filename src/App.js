@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import About from './About'
 import Services from './Services'
+import Projects from './Projects'
 import './index.css'
 
 export default function App(){
@@ -29,8 +30,27 @@ export default function App(){
       />
 
       <div className = 'services-main-container'>
-          <Services />
-          <Services />
+          <Services 
+            heading = "Graphic Design"
+            background = "url('images/desktop/image-graphic-design.jpg')"
+            color = "hsl(167, 40%, 24%)"
+            para = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit sequi molestias itaque. Voluptatem explicabo deleniti quaerat corrupti excepturi voluptate."
+          />
+          <Services 
+            heading = "Photography"
+            background = "url('images/desktop/image-photography.jpg')"
+            color = "hsl(198, 62%, 26%)"
+            para = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit sequi molestias itaque. Voluptatem explicabo deleniti quaerat corrupti excepturi voluptate."
+          />
+      </div>
+
+      <div className = 'projects-main-container'>
+        <h1 className = 'projects-heading'>Client Testimonials</h1>
+        <div class = "all-clients-container">
+            <Projects />
+            <Projects />
+            <Projects />
+        </div>
       </div>
     </div>
   )
