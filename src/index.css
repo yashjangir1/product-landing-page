@@ -10,7 +10,7 @@ body{
 
 .home-page-container{
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   background-image: url("../public/images/desktop/image-header.jpg");
   background-size: cover;
   background-position: center;
@@ -112,56 +112,6 @@ body{
 }
 
 
-.mobile-navbar{
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 90%;
-  top: 13%;
-  left: 50%;
-  padding-bottom: 40px;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.d-none{
-  display: none;
-}
-
-.mobile-navbar-items-list{
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.mobile-navbar-item{
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.mobile-navbar-link{
-  font-family: "Barlow";
-  font-size: 25px;
-  font-weight: 600;
-  text-decoration: none;
-  color:hsl(210, 4%, 67%);
-}
-
-.mobile-contact-button{
-  font-family: "Fraunces";
-  font-size: 18px;
-  text-transform: uppercase;
-  padding: 20px 30px 20px 30px;
-  background-color: yellow;
-  border: none;
-  border-radius: 50px;
-  font-weight: 900;
-  width: 160px;
-  align-self: center;
-}
-
 
 
 @keyframes arrow-animation{
@@ -245,6 +195,82 @@ body{
   width: 50vw;
 }
 
+.mobile-navbar{
+  position: absolute;
+  width: 90vw;
+  background-color: #ffffff;
+  left: 50%;
+  top: 13%;
+  transform: translateX(-50%);
+  padding: 40px;
+  border-radius: 5px;
+  animation: mobile-nav-animation ease-out 0.1s;
+  z-index: 1;
+}
+
+@keyframes mobile-nav-animation{
+  /* 10%{
+    top: -100%;
+  }
+  20%{
+    top: -10%;
+  }
+  30%{
+    top: -9%;
+  } */
+  /* 40%{
+    top: -5%;
+  }  
+  50%{
+    top: -2.5%;
+  }  */
+  60%{
+    top: 0%;
+  }
+  70%{
+    top: 2.5%;
+  } 
+  80%{
+    top: 5%;
+  }
+  90%{
+    top: 10%;
+  }
+  100%{
+    top: 13%;
+  }
+}
+
+.mobile-navbar-items-container{
+    text-align: center;
+}
+
+.mobile-navbar-item{
+  margin-top: 30px;
+}
+
+.mobile-navbar-link{
+  text-decoration: none;
+  font-family: "Barlow";
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}
+
+.mobile-contact-button{
+  padding: 20px 40px 20px 40px;
+  border: none;
+  background-color: yellow;
+  color: black;
+  font-family: "Fraunces";
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 40px;
+}
 
 
 
@@ -457,6 +483,12 @@ body{
 
 
 
+
+@media all and (min-width: 769px){
+  .mobile-navbar{
+     display: none;
+  }
+}
 
 
 

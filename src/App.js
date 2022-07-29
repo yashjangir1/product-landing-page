@@ -16,7 +16,7 @@ export default function App(){
       </div>
 
       <About 
-        title = "Tranform your brand"
+        title = "Transform your brand"
         para = "We are full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you."
         image = "/images/desktop/image-transform.jpg"
         orderI = "1"
